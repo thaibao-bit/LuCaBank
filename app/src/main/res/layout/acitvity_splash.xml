@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_background" />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="220sp"
+        android:outlineAmbientShadowColor="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Bao dep trai"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:textSize="80dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/greeting1"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:id="@+id/greetingText"
+        android:textSize="80dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Dep trai"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:textSize="80dp" />
+
+</RelativeLayout>
