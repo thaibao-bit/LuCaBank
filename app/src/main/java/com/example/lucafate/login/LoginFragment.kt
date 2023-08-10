@@ -19,8 +19,7 @@ import com.example.lucafate.R
 import javax.inject.Inject
 
 class LoginFragment : Fragment() {
-    @Inject
-    lateinit var loginViewModel: LoginViewModel
+    @Inject lateinit var loginViewModel: LoginViewModel
     private lateinit var errorTextView: TextView
 
 
