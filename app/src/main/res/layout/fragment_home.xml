@@ -122,6 +122,7 @@
                 android:gravity="center"
                 >
                 <RelativeLayout
+                    android:id="@+id/accountTouchView"
                     android:layout_width="0dp"
                     android:layout_height="65dp"
                     android:layout_weight="4"

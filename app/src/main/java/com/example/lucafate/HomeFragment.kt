@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.Button
 import android.widget.GridView
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -28,7 +29,8 @@ class HomeFragment : Fragment() {
 
         val homeButton = view.findViewById<Button>(R.id.loginButton)
         homeButton.setOnClickListener { findNavController().navigate(R.id.action_homeFragment_to_loginFragment) }
-
+        val accountTouchView = view.findViewById<RelativeLayout>(R.id.accountTouchView)
+        accountTouchView.setOnClickListener { findNavController().navigate(R.id.action_homeFragment_to_accountActivity) }
 
         mGridView = view.findViewById<GridView>(R.id.gridViewHomePage)
         features = ArrayList<GridViewModal>()

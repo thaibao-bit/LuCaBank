@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.biometric.BiometricManager
@@ -54,7 +55,7 @@ class LoginFragment : Fragment() {
         val passwordEditText = view.findViewById<EditText>(R.id.passwordEdtTxt)
 
         val loginByPass = view.findViewById<Button>(R.id.loginByPass)
-        val backBtn = view.findViewById<Button>(R.id.backBtn)
+        val backBtn = view.findViewById<ImageButton>(R.id.backBtn)
         val loginByFingerPrint = view.findViewById<Button>(R.id.loginByFingerPrint)
 
         loginByPass.setOnClickListener {

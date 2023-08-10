@@ -5,5 +5,9 @@
     <string name="greeting3">LuCaBanking</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account">Tài khoản</string>
+    <string name="paymentAccount">Tài khoản thanh toán</string>
+    <string name="savingAccount">Tài khoản tiết kiệm</string>
+    <string name="availableBalances">Số dư khả dụng</string>
 
 </resources>

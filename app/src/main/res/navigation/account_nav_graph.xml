@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_nav_graph"
+    app:startDestination="@id/accountFragment">
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.lucafate.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_accountDetailFragment"
+            app:destination="@id/accountDetailFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_nav_graph"
+            app:destination="@id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountDetailFragment"
+        android:name="com.example.lucafate.AccountDetailFragment"
+        android:label="fragment_account_detail"
+        tools:layout="@layout/fragment_account_detail" >
+        <action
+            android:id="@+id/action_accountDetailFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <include app:graph="@navigation/nav_graph" />
+</navigation>
