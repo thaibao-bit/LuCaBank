@@ -45,15 +45,15 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     >
-                    <Button
+                    <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageButton"
-                        android:text="a"
+                        android:src="@android:drawable/ic_menu_search"
                         android:background="@drawable/small_button"
                         android:scaleType="centerCrop"
                         android:padding="1dp">
-                    </Button>
+                    </ImageButton>
                 </RelativeLayout>
 
 
@@ -64,14 +64,14 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     >
-                    <Button
+                    <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:text="a"
+                        android:src="@android:drawable/ic_popup_reminder"
                         android:background="@drawable/small_button"
                         android:scaleType="centerCrop"
                         android:padding="1dp">
-                    </Button>
+                    </ImageButton>
                 </RelativeLayout>
             </LinearLayout>
             <LinearLayout
