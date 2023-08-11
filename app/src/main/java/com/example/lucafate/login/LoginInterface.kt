@@ -1,7 +1,13 @@
 package com.example.lucafate.login
 
 interface LoginInterface {
-    fun loginSuccess()
-    fun loginFailed()
-    fun loginError()
+    interface View{
+        fun loginSuccess()
+        fun loginFailed()
+        fun loginError()
+
+    }
+    interface Presenter{
+        fun login(account: String, password: String)
+    }
 }

@@ -22,7 +22,7 @@ import com.example.lucafate.R
 import kotlinx.android.synthetic.main.fragment_login.*
 import javax.inject.Inject
 
-class LoginFragment : Fragment(), LoginInterface {
+class LoginFragment : Fragment(), LoginInterface.View {
     @Inject lateinit var loginViewModel: LoginViewModel
     private lateinit var errorTextView: TextView
 
